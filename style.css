@@ -1,0 +1,37 @@
+html { scroll-behavior: smooth; }
+body { font-family: Arial, sans-serif; margin: 0; background: #f5f5f5; color: #222; }
+nav { background: #228B22; padding: 12px; text-align: center; }
+nav a { color: white; text-decoration: none; margin: 0 16px; font-weight: bold; }
+nav a:hover { text-decoration: underline; opacity: 0.8; }
+
+header { background: #1a6b1a; color: white; text-align: center; padding: 48px 16px; display: flex; flex-direction: column; align-items: center; }
+header h1 { font-size: 2.4rem; margin: 0 0 8px 0; }
+header p { font-size: 1.1rem; margin: 0; color: #cef5ce; }
+
+#profile-photo { width:150px; height:150px; border-radius:50%; object-fit:cover; object-position:center top; border:4px solid white; margin-bottom:16px; }
+
+section { max-width: 860px; margin: 60px auto; padding: 0 16px; }
+section h2 { border-bottom: 2px solid #228B22; padding-bottom: 6px; color: #1a6b1a; }
+
+.skills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.skill { background: #228B22; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; }
+
+.project-card { background: white; border: 1px solid #ccc; border-radius: 8px; padding: 20px; margin-bottom: 32px; }
+.project-card h3 { margin-top: 0; color: #228B22; }
+
+#chess-board { width: 480px; height: 480px; display: grid; grid-template-rows: repeat(8, 1fr); grid-template-columns: repeat(8, 1fr); border: 4px solid #333; }
+.cell { width:60px; height:60px; display: flex; align-items: center; justify-content: center; box-sizing:border-box; }
+.light { background-color: #d7e1e4; }
+.dark { background-color: #7b8181; }
+.cell img { width: 60%; height:60%; }
+
+.invert-color { filter: invert(100%); }
+
+#marker { width:24px; height:24px; background:black; border-radius:50%; outline:5px solid #228B22; border:5px solid white; position:absolute; top:0; left:0; transform:translate(-50%,-50%); }
+#btn { background:#228B22; color:white; border:none; border-radius:8px; padding:12px 40px; font-size:1rem; font-weight:bold; cursor:pointer; margin:12px 0; }
+#scan-error { color: #c00; font-size: 0.9rem; margin-top: 6px; display: none; }
+
+footer { background: #1a6b1a; color: white; text-align: center; padding: 24px 16px; margin-top: 40px; }
+footer address { font-style: normal; margin-bottom: 8px; }
+footer a { color: #cef5ce; margin: 0 10px; text-decoration: none; }
+footer a:hover { text-decoration: underline; }
